@@ -1,0 +1,26 @@
+{
+    "routing": {
+        "index": "/index.html",
+        "routes": {
+            "/": {
+                "match": "exact"
+            },
+            "/home": {
+                "match": "prefix"
+            },
+            "/todies": {
+                "match": "prefix"
+            }
+        }
+    },
+    "external": {
+        "urls": [
+            {
+                "url": "https://fonts.googleapis.com/css?family=Montserrat:400,300,700"
+            },
+            {
+                "url": "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+            }
+        ]
+    }
+}
