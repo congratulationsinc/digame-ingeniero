@@ -1,12 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 
 const todies = {
-  3: 'Todos se chupan!',
-  5: 'Obligas a alguien!',
-  7: 'El de tu derecha se chupa!',
-  9: 'El de tu izquierda se chupa!',
-  11: 'Tomas por él/ella!',
-  12: 'Te chupas solo!'
+  3: {
+    message: 'Todos se chupan!',
+    audio: './assets/sounds/T.ogg'
+  },
+  5: {
+    message: 'Obligas a alguien!',
+    audio: './assets/sounds/O.ogg'
+  },
+  7: {
+    message: 'El de tu derecha se chupa!',
+    audio: './assets/sounds/D.ogg'
+  },
+  9: {
+    message: 'El de tu izquierda se chupa!',
+    audio: './assets/sounds/I.ogg'
+  },
+  11: {
+    message: 'Tomas por él/ella!',
+    audio: './assets/sounds/E.ogg'
+  },
+  12: {
+    message: 'Te chupas solo!',
+    audio: './assets/sounds/S.ogg'
+  }
 };
 
 @Component({
@@ -30,6 +48,7 @@ export class LandingComponent implements OnInit {
   firstDice: number;
   secondDice: number;
   stars: string[];
+  audio: any;
 
   constructor() {
     this.beer = './assets/img/beer/beer.png';
@@ -54,9 +73,12 @@ export class LandingComponent implements OnInit {
       this.message = '';
     }
     let sum = this.firstDice + this.secondDice;
-    this.message = todies['' + sum];
-    if (!this.message) {
+    let todiesVar = todies['' + sum];
+    if (!todiesVar) {
       this.message = 'Pasa el turno!';
+    } else {
+      this.message = todiesVar.message;
+      this.playAudio(todiesVar.audio);
     }
   }
 
@@ -67,10 +89,17 @@ export class LandingComponent implements OnInit {
     if (this.stars.length === 3) {
       if (this.firstDice === 6) {
         this.message = 'Te chupas el doble';
+        this.playAudio('./assets/sounds/doble.ogg');
       } else {
         this.message = 'Te chupas';
+        this.playAudio('./assets/sounds/par.ogg');
       }
     }
+  }
+
+  playAudio(audio): void {
+    this.audio = new Audio(audio);
+    this.audio.play();
   }
 
 }
