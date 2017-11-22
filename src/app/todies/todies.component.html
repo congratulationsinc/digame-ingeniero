@@ -1,27 +1,41 @@
-<div class="page-header" data-parallax="true" style="background-color: #D0D3D4;">
-  <div class="filter"></div>
-  <div class="container">
-      <div class="motto text-center">
-          <span class="label label-primary"><p style="font-size: 500%; font-weight: bold;">T</p></span>
-          <span class="label label-info"><p style="font-size: 500%; font-weight: bold;">O</p></span>
-          <span class="label label-success"><p style="font-size: 500%; font-weight: bold;">D</p></span>
-          <span class="label label-warning"><p style="font-size: 500%; font-weight: bold;">I</p></span>
-          <span class="label label-danger"><p style="font-size: 500%; font-weight: bold;">E</p></span>
-          <span class="label label-primary"><p style="font-size: 500%; font-weight: bold;">S</p></span>
-          <h3>{{message}}</h3>
-          <br>
-          <div class="row justify-content-center">
-              <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;">
-              <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;">
-          </div>
-          <br>
-          <div class="row justify-content-center" style="height: 50px;">
-              <div *ngFor="let star of stars">
-                  <img src="{{star}}" style="width: 50px; height: 50px;">
-              </div>
-          </div>
-          <br>
-          <button type="button" class="btn btn-outline-neutral btn-round" (click)="throwDices()">Lanzar</button>
-      </div>
-  </div>
+<div class="page-header" data-parallax="true" style="background-image: url('../assets/img/bar-1.JPG');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <div style="height: 100px">
+                <span class="label label-primary">
+                    <p style="font-weight: bold;" [style.font-size]="todies[3].fontSize">T</p>
+                </span>
+                <span class="label label-info">
+                    <p style="font-weight: bold;" [style.font-size]="todies[5].fontSize">O</p>
+                </span>
+                <span class="label label-success">
+                    <p style="font-weight: bold;" [style.font-size]="todies[7].fontSize">D</p>
+                </span>
+                <span class="label label-warning">
+                    <p style="font-weight: bold;" [style.font-size]="todies[9].fontSize">I</p>
+                </span>
+                <span class="label label-danger">
+                    <p style="font-weight: bold;" [style.font-size]="todies[11].fontSize">E</p>
+                </span>
+                <span class="label label-primary">
+                    <p style="font-weight: bold;" [style.font-size]="todies[12].fontSize">S</p>
+                </span>
+            </div>
+            <h3>{{message}}</h3>
+            <br>
+            <div class="row justify-content-center">
+                <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;">
+                <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;">
+            </div>
+            <br>
+            <div class="row justify-content-center" style="height: 50px;">
+                <div *ngFor="let star of stars">
+                    <img src="{{star}}" style="width: 50px; height: 50px;">
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-outline-neutral btn-round" (click)="throwDices()">Lanzar</button>
+        </div>
+    </div>
 </div>
