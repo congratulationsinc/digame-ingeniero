@@ -1,38 +1,50 @@
 import { Component, OnInit } from '@angular/core';
 
-const todies = {
-  3: {
-    message: 'Todos se chupan!',
-    audio: './assets/sounds/T.ogg'
-  },
-  5: {
-    message: 'Obligas a alguien!',
-    audio: './assets/sounds/O.ogg'
-  },
-  7: {
-    message: 'El de tu derecha se chupa!',
-    audio: './assets/sounds/D.ogg'
-  },
-  9: {
-    message: 'El de tu izquierda se chupa!',
-    audio: './assets/sounds/I.ogg'
-  },
-  11: {
-    message: 'Tomas por él/ella!',
-    audio: './assets/sounds/E.ogg'
-  },
-  12: {
-    message: 'Te chupas solo!',
-    audio: './assets/sounds/S.ogg'
-  }
-};
-
 @Component({
   selector: 'app-todies',
   templateUrl: './todies.component.html',
   styleUrls: ['./todies.component.css']
 })
 export class TodiesComponent implements OnInit {
+  todies = {
+    3: {
+      message: 'Todos se chupan!',
+      audio: './assets/sounds/T.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    },
+    5: {
+      message: 'Obligas a alguien!',
+      audio: './assets/sounds/O.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    },
+    7: {
+      message: 'El de tu derecha se chupa!',
+      audio: './assets/sounds/D.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    },
+    9: {
+      message: 'El de tu izquierda se chupa!',
+      audio: './assets/sounds/I.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    },
+    11: {
+      message: 'Tomas por él/ella!',
+      audio: './assets/sounds/E.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    },
+    12: {
+      message: 'Te chupas solo!',
+      audio: './assets/sounds/S.ogg',
+      fontSize: '500%',
+      fontColor: '#FFF'
+    }
+  };
+
   dices = {
     1: './assets/img/dices/dice-1.png',
     2: './assets/img/dices/dice-2.png',
@@ -62,6 +74,8 @@ export class TodiesComponent implements OnInit {
   throwDices(): void {
     this.firstDice = Math.floor((Math.random() * 6) + 1);
     this.secondDice = Math.floor((Math.random() * 6) + 1);
+    this.setFontSizeToDefault();
+    this.setFontSelectedColor();
     this.calculateDiceSum();
     this.addStars();
   }
@@ -72,10 +86,12 @@ export class TodiesComponent implements OnInit {
       this.message = '';
     }
     let sum = this.firstDice + this.secondDice;
-    let todiesVar = todies['' + sum];
+    let todiesVar = this.todies['' + sum];
     if (!todiesVar) {
       this.message = 'Pasa el turno!';
     } else {
+      todiesVar.fontSize = '600%';
+      todiesVar.fontColor = '#74787B';
       this.message = todiesVar.message;
       this.playAudio(todiesVar.audio);
     }
@@ -97,9 +113,27 @@ export class TodiesComponent implements OnInit {
   }
 
   playAudio(audio): void {
-    this.audio = new Audio(audio);
-    this.audio.play();
+    setTimeout(function () {
+      this.audio = new Audio(audio);
+      this.audio.play();
+    });
   }
 
+  setFontSizeToDefault() {
+    this.todies[3].fontSize = '500%';
+    this.todies[5].fontSize = '500%';
+    this.todies[7].fontSize = '500%';
+    this.todies[9].fontSize = '500%';
+    this.todies[11].fontSize = '500%';
+    this.todies[12].fontSize = '500%';
+  }
 
+  setFontSelectedColor() {
+    this.todies[3].fontColor = '#FFF';
+    this.todies[5].fontColor = '#FFF';
+    this.todies[7].fontColor = '#FFF';
+    this.todies[9].fontColor = '#FFF';
+    this.todies[11].fontColor = '#FFF';
+    this.todies[12].fontColor = '#FFF';
+  }
 }
