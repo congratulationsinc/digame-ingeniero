@@ -28,12 +28,11 @@ const todies = {
 };
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'app-todies',
+  templateUrl: './todies.component.html',
+  styleUrls: ['./todies.component.css']
 })
-
-export class LandingComponent implements OnInit {
+export class TodiesComponent implements OnInit {
   dices = {
     1: './assets/img/dices/dice-1.png',
     2: './assets/img/dices/dice-2.png',
@@ -101,5 +100,6 @@ export class LandingComponent implements OnInit {
     this.audio = new Audio(audio);
     this.audio.play();
   }
+
 
 }

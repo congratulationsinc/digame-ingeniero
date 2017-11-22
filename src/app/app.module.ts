@@ -6,16 +6,18 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { TodiesComponent } from './todies/todies.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TodiesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

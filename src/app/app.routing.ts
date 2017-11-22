@@ -3,11 +3,13 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
+import { TodiesComponent } from './todies/todies.component';
 
 const routes: Routes = [
-  { path: 'todies', component: LandingComponent },
-  { path: '', redirectTo: 'todies', pathMatch: 'full' }
+  { path: 'todies', component: TodiesComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
