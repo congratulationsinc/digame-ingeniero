@@ -16,13 +16,23 @@ const todies = {
 })
 
 export class LandingComponent implements OnInit {
+  dices = {
+    1: './assets/img/dices/dice-1.png',
+    2: './assets/img/dices/dice-2.png',
+    3: './assets/img/dices/dice-3.png',
+    4: './assets/img/dices/dice-4.png',
+    5: './assets/img/dices/dice-5.png',
+    6: './assets/img/dices/dice-6.png'
+  };
 
+  beer: string;
   message: string;
   firstDice: number;
   secondDice: number;
   stars: string[];
 
   constructor() {
+    this.beer = './assets/img/beer/beer.png';
     this.message = 'Que empiece el juego!';
     this.firstDice = 1;
     this.secondDice = 1;
@@ -46,13 +56,13 @@ export class LandingComponent implements OnInit {
     let sum = this.firstDice + this.secondDice;
     this.message = todies['' + sum];
     if (!this.message) {
-      this.message = 'Vuelves a lanzar!';
+      this.message = 'Pasa el turno!';
     }
   }
 
   addStars(): void {
     if (this.firstDice === this.secondDice) {
-      this.stars.push('*');
+      this.stars.push(this.beer);
     }
     if (this.stars.length === 3) {
       if (this.firstDice === 6) {
