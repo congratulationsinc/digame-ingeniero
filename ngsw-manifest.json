@@ -1,0 +1,116 @@
+{
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "match": "exact"
+      },
+      "/home": {
+        "match": "prefix"
+      },
+      "/todies": {
+        "match": "prefix"
+      }
+    }
+  },
+  "external": {
+    "urls": [
+      {
+        "url": "https://fonts.googleapis.com/css?family=Montserrat:400,300,700"
+      },
+      {
+        "url": "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+      }
+    ]
+  },
+  "static": {
+    "urls": {
+      "https://congratulationsinc.github.io/digame-ingeniero/ilya-yakover.efe053682ec97d330ada.jpg": "42795b3c8ecc611afbf7bad3295c2d2a2dabe72d",
+      "https://congratulationsinc.github.io/digame-ingeniero/nucleo-icons.f32ed5ad3d76067b8e43.eot": "8cd64edd418a94d9635330eb1f06554a312de799",
+      "https://congratulationsinc.github.io/digame-ingeniero/nucleo-icons.6836b93bf1af0b571928.woff": "ca4019ca1601309e02b435c6ed97544b83e2dba0",
+      "https://congratulationsinc.github.io/digame-ingeniero/nucleo-icons.5c78b4cf03771fd22873.woff2": "a64d1a7d42a9566b0f9a44a45c66065f773ee093",
+      "https://congratulationsinc.github.io/digame-ingeniero/nucleo-icons.48ac036da7c792326626.ttf": "fc62a53c862cf8a8bbedea275fd7d5708910e761",
+      "https://congratulationsinc.github.io/digame-ingeniero/polyfills.848e9ee554197d63acc1.bundle.js": "7bd5e9d0b68e1b0da88d9e6f3630f8196d40bef6",
+      "https://congratulationsinc.github.io/digame-ingeniero/main.1db9bc4b799bfc75383c.bundle.js": "91c981b118d6ca339134a068202def0460f7dc8e",
+      "https://congratulationsinc.github.io/digame-ingeniero/sw-register.6819cd2c5fa25470ecf2.bundle.js": "50d549edfbd188ed199d8d0b079afa593202e3ea",
+      "https://congratulationsinc.github.io/digame-ingeniero/vendor.1984d6f355b437ade817.bundle.js": "32ed5380223c04c0d200af7ce061f0a21563d427",
+      "https://congratulationsinc.github.io/digame-ingeniero/inline.c17b317b58761f76dd90.bundle.js": "04006da57f0077ec018b7a6a2dddc8c002926501",
+      "https://congratulationsinc.github.io/digame-ingeniero/styles.b0165f608e5395e78731.bundle.css": "ff884e7816251f8be398ba5ae570a159cd7375da",
+      "https://congratulationsinc.github.io/digame-ingeniero/scripts.bf59dd6c4d5b15fad2b1.bundle.js": "dde7f6b0960edfa54545b9333767996e515b14fb",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/css/demo.css": "afa0264dedd3e64f4ac9b1cd868c9514091b935d",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/css/nucleo-icons.css": "9641ca9f2704406e7cce5ec301d6966b99be2add",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/fonts/nucleo-icons.eot": "8cd64edd418a94d9635330eb1f06554a312de799",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/fonts/nucleo-icons.woff": "ca4019ca1601309e02b435c6ed97544b83e2dba0",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/fonts/nucleo-icons.woff2": "a64d1a7d42a9566b0f9a44a45c66065f773ee093",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/fonts/nucleo-icons.ttf": "fc62a53c862cf8a8bbedea275fd7d5708910e761",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/android-chrome-192x192.png": "eec3bafcce660f0bd72e72b3ccb54e003e0dc0a6",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/android-chrome-512x512.png": "929f4418e9cac2937760cb98f7a88944d2e50721",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/apple-touch-icon.png": "6683e8224db2786dfd14105dbc699d0ad0fafe50",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/favicon-32x32.png": "404a1911adb30fd88cf5227cecffc1cb7ed706fe",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/favicon-16x16.png": "76eb4957aaf9afabc1491abc17e6f7a5e96aae6b",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/favicon.ico": "dd42a87bd0486857142facedb1e38f4e66084859",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/mstile-150x150.png": "3025666630e6a20dff76d2298c2cf10f3f3aa47f",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/icons/safari-pinned-tab.svg": "57608ccd5a992c77f43a1054b1b2491bb4fd7461",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/beer/beer.png": "b7cd5d54b812f800d3e2f8aeff112a35bbdde2a4",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-1.png": "77c84af55dbc78b5f2faec23928c957e38b05d8b",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-2.png": "360fc0f7617639b6ac26e84c8c6ad81c17891a61",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-3.png": "e47492028e14cda35880abdc4cf670daa404d6d9",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-4.png": "3e87fd5c43e2b8df978c5e7d2b8d27eb5b2dab79",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-5.png": "2b5a6f63fd0b76b9b80283359ac182f3b880bbbf",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/favicon.ico": "db8c3748255ee987cc616d99719b612c0039c0e6",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/dices/dice-6.png": "33ab1ea24d5c89daaa6d97d1d5bdb8b813f5c6bf",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/miaugrrr.jpg": "6fd7592e87195ac166cb8d35e7a672cd4244a2c2",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit.scss": "d2b099afef66b49608930d0cba0bdfaf79689c06",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/ilya-yakover.jpg": "42795b3c8ecc611afbf7bad3295c2d2a2dabe72d",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_alerts.scss": "ff282e38b1fb60ec90263ab3f0dc9df1dadca621",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_bootstrap-switch.scss": "0c12d5c53c2e566d323cd3ea77d64603558ae45a",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_cards.scss": "d62c3652c97e41a26f65f78e5eaf72f3d0460945",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_buttons.scss": "687f96d63efe3f2414cb3dc2ed8c2c4ba4beffeb",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/space-1.jpg": "d5e70ff2ae3c1025aed961521d2db0db5d76643c",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_checkbox-radio.scss": "07ed9cf0ab4df61a6fb208cfd7de10c4ef600d90",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_carousel.scss": "a547916c29b465d14f8dd725f232a8f28f7819bc",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_collapse.scss": "7a3d5078f1ac6138ed2890403df372004b145783",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_dropdown.scss": "4bd6a3089741b1e43dd848e30a2fd3037c1d0566",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_examples.scss": "d787f579214175eb8cf4c41a4e47c0ba79d35026",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_footers.scss": "c3ef078beb2817401b3eeca50c31e5f635175f0c",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_icons.scss": "717ccf3235202438ee271346332c9ac301ff8713",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_images.scss": "aed82c4af2cd06b38598d3677ce8ea7eed8ec9df",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_inputs.scss": "876b6c00624d3ea8cd7b5026235895aacdee2ffb",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_labels.scss": "5875f30da3ee25d053f5bfdb2023820b22c68222",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_misc.scss": "80b7aca131210cea153954cc275695d3a54df25d",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_mixins.scss": "c75244922457bad8c918f9c343e8c24e4a8d4205",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_navbars.scss": "74744da40235fb05217379a22f73957dbd6efc2d",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_progress-bars.scss": "9e8996097a77aaa1659a3a1d23db707684293036",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_modal.scss": "7b0ab4508e95284e8ee65b6eb2db7ef69f2337c3",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_responsive.scss": "79c056718a69ddd9d3864680eb0b7b158ba00799",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_sections.scss": "381346cd69b812cb65d281f2f12dffa4e12402dc",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_sliders.scss": "6a26b55da21bec9bbddacde4fdb7596e325d2b07",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_tabs-navs-pagination.scss": "8de68bfd188672d025f1b0903b1cda511aa4d245",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_social-buttons.scss": "82f0bed7eaa28c25469f5bff4456e7836576ead6",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_tooltips-and-popovers.scss": "d604e64dead5415c1d004c5f55c8eb4a95abee02",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_typography.scss": "bf075f61aad727fa101591fac080a934ff028791",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/_variables.scss": "d7d11fca3665c7282e1dc2fa5f660ca2ff0b4543",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_buttons.scss": "0f127531df87a5c286b0ce4c66a73c94a850c892",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_inputs.scss": "fe50e0818626b7560f652a8e8c6d7e5ec30e2575",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_labels.scss": "4d3756491b005d3c18049407b0e9843a4ae07284",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_navbars.scss": "60ee0f5d7166f77c35935019f8febc5dd4cb8a24",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_popovers.scss": "28f065e36fe1cc2fa30eff308dd5e560b887696b",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_tabs.scss": "0c7fc7de5aeb34d02c8a18f92eac007615af9493",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_transparency.scss": "a0bf13b4dcd58ed1dff3ca80a0ee34d51012701f",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/plugins/_datetimepicker.scss": "9bf99b42df8f31ba7ee0e0ae3265b09edf2351a0",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sass/paper-kit/mixins/_vendor-prefixes.scss": "a00bff3ea5a2f4cc94eabb20d993f3c4d0dc8647",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/D.ogg": "af1c3b1e93c967af4da8edd05f7af7cf52a95d12",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/doble.ogg": "bab2e160bc30817036705e996c78e3d153546b9f",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/I.ogg": "ec32a6eca25d1a168b1b6b0319e6d6dfef716fb5",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/E.ogg": "6c7b99bb1cb8996c151b79e6e87d5810de637cc8",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/O.ogg": "d9f1f94f6eb6c7764056a7667497697d3fc47661",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/par.ogg": "5edf15324a9df6952faf8b605ba2de53afb9fdec",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/img/bar-1.JPG": "7b9c4cdb88110e685014677c5d176b83c484f3e1",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/S.ogg": "b6ed506dca484fb60e2eb6b218cc68db057fac9c",
+      "https://congratulationsinc.github.io/digame-ingeniero/assets/sounds/T.ogg": "893c907b87d6c0df86d0f853ecb6506a773a989f",
+      "https://congratulationsinc.github.io/digame-ingeniero/manifest.json": "eb7f0e86922f816307510669f35dc6dfd7846e3e",
+      "https://congratulationsinc.github.io/digame-ingeniero/index.html": "16fee2e5562db0fb92cf72c56ceebd76236c869b"
+    },
+    "_generatedFromWebpack": true
+  }
+}
