@@ -1,48 +1,41 @@
 <div class="page-header" data-parallax="true" style="background-image: url('../assets/img/bar-1.JPG');">
-  <div class="filter"></div>
-  <div class="container">
-    <div class="motto text-center">
-      <div style="height: 100px">
-        <span class="label label-primary">
-          <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[3].fontSize" 
-          [style.color]="todies[3].fontColor">T</p>
-        </span>
-        <span class="label label-info">
-          <p style="font-weight: bold;  text-shadow: 3px 2px black;" [style.font-size]="todies[5].fontSize" 
-          [style.color]="todies[5].fontColor">O</p>
-        </span>
-        <span class="label label-success">
-          <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[7].fontSize" 
-          [style.color]="todies[7].fontColor">D</p>
-        </span>
-        <span class="label label-warning">
-          <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[9].fontSize" 
-          [style.color]="todies[9].fontColor">I</p>
-        </span>
-        <span class="label label-danger">
-          <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[11].fontSize" 
-          [style.color]="todies[11].fontColor">E</p>
-        </span>
-        <span class="label label-primary">
-          <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[12].fontSize" 
-          [style.color]="todies[12].fontColor">S</p>
-        </span>
-      </div>
-      <h3>{{message}}</h3>
-      <br>
-      <div class="row justify-content-center">
-        <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;">
-        <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;">
-      </div>
-      <br>
-      <div class="row justify-content-center" style="height: 50px;">
-        <div *ngFor="let star of stars">
-          <img src="{{star}}" style="width: 50px; height: 50px;">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <div style="height: 100px">
+                <span class="label label-primary">
+                    <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[3].fontSize" [style.color]="todies[3].fontColor">T</p>
+                </span>
+                <span class="label label-info">
+                    <p style="font-weight: bold;  text-shadow: 3px 2px black;" [style.font-size]="todies[5].fontSize" [style.color]="todies[5].fontColor">O</p>
+                </span>
+                <span class="label label-success">
+                    <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[7].fontSize" [style.color]="todies[7].fontColor">D</p>
+                </span>
+                <span class="label label-warning">
+                    <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[9].fontSize" [style.color]="todies[9].fontColor">I</p>
+                </span>
+                <span class="label label-danger">
+                    <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[11].fontSize" [style.color]="todies[11].fontColor">E</p>
+                </span>
+                <span class="label label-primary">
+                    <p style="font-weight: bold; text-shadow: 3px 2px black;" [style.font-size]="todies[12].fontSize" [style.color]="todies[12].fontColor">S</p>
+                </span>
+            </div>
+            <h3>{{message}}</h3>
+            <br>
+            <div class="row justify-content-center">
+                <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;">
+                <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;">
+            </div>
+            <br>
+            <div class="row justify-content-center" style="height: 50px;">
+                <div *ngFor="let star of stars">
+                    <img src="{{star}}" style="width: 50px; height: 50px;">
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-outline-neutral btn-round" [disabled]="!throwEnable" (click)="throwDices()">Lanzar</button>
         </div>
-      </div>
-      <br>
-      <button type="button" class="btn btn-outline-neutral btn-round" (click)="throwDices()">Lanzar</button>
     </div>
-  </div>
 </div>
->>>>>>> 74cb28aa7d4f0bdc44c7d055fbbbbb50821b08e6

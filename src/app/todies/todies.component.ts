@@ -59,6 +59,7 @@ export class TodiesComponent implements OnInit {
   firstDice: number;
   secondDice: number;
   stars: string[];
+  throwEnable: boolean;
   audio: any;
 
   constructor() {
@@ -67,6 +68,7 @@ export class TodiesComponent implements OnInit {
     this.firstDice = 1;
     this.secondDice = 1;
     this.stars = new Array();
+    this.throwEnable = true;
   }
 
   ngOnInit() { }
@@ -90,6 +92,7 @@ export class TodiesComponent implements OnInit {
     if (!todiesVar) {
       this.message = 'Pasa el turno!';
     } else {
+      this.throwEnable = false;
       todiesVar.fontSize = '600%';
       todiesVar.fontColor = '#74787B';
       this.message = todiesVar.message;
@@ -103,9 +106,11 @@ export class TodiesComponent implements OnInit {
     }
     if (this.stars.length === 3) {
       if (this.firstDice === 6) {
+        this.throwEnable = false;
         this.message = 'Te chupas el doble';
         this.playAudio('./assets/sounds/doble.ogg');
       } else {
+        this.throwEnable = false;
         this.message = 'Te chupas';
         this.playAudio('./assets/sounds/par.ogg');
       }
@@ -113,10 +118,11 @@ export class TodiesComponent implements OnInit {
   }
 
   playAudio(audio): void {
-    setTimeout(function () {
-      this.audio = new Audio(audio);
-      this.audio.play();
-    });
+    this.audio = new Audio(audio);
+    this.audio.onended = () => {
+      this.throwEnable = true;
+    }
+    this.audio.play();
   }
 
   setFontSizeToDefault() {
