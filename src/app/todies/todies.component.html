@@ -25,13 +25,13 @@
             <h3>{{message}}</h3>
             <br>
             <div class="row justify-content-center">
-                <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;">
-                <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;">
+                <img src="{{dices[firstDice + '']}}" style="width: 50px; height: 50px;" alt="{{firstDice}}">
+                <img src="{{dices[secondDice + '']}}" style="width: 50px; height: 50px;" alt="{{secondDice}}">
             </div>
             <br>
             <div class="row justify-content-center" style="height: 50px;">
                 <div *ngFor="let star of stars">
-                    <img src="{{star}}" style="width: 50px; height: 50px;">
+                    <img src="{{star}}" style="width: 50px; height: 50px;" alt="par">
                 </div>
             </div>
             <br>

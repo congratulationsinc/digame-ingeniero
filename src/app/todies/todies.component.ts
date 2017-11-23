@@ -83,7 +83,8 @@ export class TodiesComponent implements OnInit {
   }
 
   calculateDiceSum(): void {
-    if (this.message === 'Te chupas') {
+    if (this.message === 'Te chupas'
+      || (this.message === 'Te chupas el doble' && this.stars.length === 3)) {
       this.stars = new Array();
       this.message = '';
     }
@@ -95,8 +96,15 @@ export class TodiesComponent implements OnInit {
       this.throwEnable = false;
       todiesVar.fontSize = '600%';
       todiesVar.fontColor = '#74787B';
-      this.message = todiesVar.message;
-      this.playAudio(todiesVar.audio);
+      if (todiesVar.message === 'Te chupas solo!') {
+        if (this.stars.length !== 2) {
+          this.message = todiesVar.message;
+          this.playAudio(todiesVar.audio);
+        }
+      } else {
+        this.message = todiesVar.message;
+        this.playAudio(todiesVar.audio);
+      }
     }
   }
 
@@ -119,9 +127,15 @@ export class TodiesComponent implements OnInit {
 
   playAudio(audio): void {
     this.audio = new Audio(audio);
+
+    this.audio.onerror = () => {
+      this.throwEnable = true;
+    }
+
     this.audio.onended = () => {
       this.throwEnable = true;
     }
+
     this.audio.play();
   }
 
